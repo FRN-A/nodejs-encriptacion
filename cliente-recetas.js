@@ -9,7 +9,7 @@ const TARGET = process.env.TARGET || "recetas:4000";
 
 const opciones = {
     agent: new https.Agent({
-        ca: fs.readFileSync(__dirname + "shared/tls/certificado-publico.cert")
+        ca: fs.readFileSync(__dirname + "/shared/tls/certificado-publico.cert")
     })
 };
 
